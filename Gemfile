@@ -28,6 +28,8 @@ gem 'mysql2'
 
 gem 'pry'
 
+gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
