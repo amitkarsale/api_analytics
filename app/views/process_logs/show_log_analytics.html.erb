@@ -1,0 +1,42 @@
+<%= form_tag process_logs_show_log_analytics_path, :method => "get" do %>
+	<p>
+		<%= text_field_tag :search, params[:search] %>
+		<%= submit_tag "Search", :name => nil %>
+	</p>
+<% end %>
+<p><i>The following data is from <%= @attachment_count %> foreman-debug logs.</i></p>
+<table>
+	<tr>
+		<th><a href="?order=method&search=<%= @search %>">Request Method</a></th>
+		<th><a href="?order=endpoint&search=<%= @search %>">Request Endpoint</a></th>
+		<th><a href="?order=count&search=<%= @search %>">Request Count</a></th>
+	</tr>
+	<% @request_metadata.each do |metadata| %>
+		<tr>
+			<td><%= metadata.request_method %></td>
+			<td align="center"><i><%= metadata.request_endpoint %></i></td>
+			<td align="center"><%= metadata.count %></td>
+		</tr>
+	<% end %>
+</table>
+<style>
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+</style>

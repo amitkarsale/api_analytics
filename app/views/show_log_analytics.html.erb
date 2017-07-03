@@ -1,0 +1,14 @@
+<table>
+	<tr>
+		<th>Request Method</th>
+		<th>Request Endpoint</th>
+		<th>Request Count</th>
+	</tr>
+	<% @request_metadata.each do |metadata| %>
+		<tr>
+			<td><%= metadata.request_method %></td>
+			<td align="center"><i><%= metadata.request_endpoint %></i></td>
+			<td align="center"><%= metadata.timestamp %></td>
+		</tr>
+	<% end %>
+</table>
