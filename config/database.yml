@@ -10,6 +10,6 @@ production:
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  host: gorgeous-dry-tortugas-96522
+  host: localhost
   username: root
   password: root
