@@ -5,3 +5,11 @@ development:
   host: localhost
   username: root
   password: root
+
+ production:
+  adapter: mysql2
+  encoding: utf8
+  database: api_analytics
+  host: localhost
+  username: root
+  password: root
