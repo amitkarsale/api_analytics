@@ -10,7 +10,7 @@ production:
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  host: 1bffe225-06c2-4d1e-96b2-3bae6983c139
-  # host: 172.19.11.194
+  # host: 1bffe225-06c2-4d1e-96b2-3bae6983c139
+  host: 172.19.11.194
   username: root
   password: root
