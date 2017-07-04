@@ -10,6 +10,6 @@ production:
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  host: localhost
+  host: 172.19.11.194
   username: root
   password: root
