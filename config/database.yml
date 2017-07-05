@@ -6,7 +6,16 @@ development:
   username: root
   password: root
 
+test:
+  adapter: mysql2
+  encoding: utf8
+  database: api_analytics
+  host: localhost
+  username: root
+  password: root
+
 production:
+  url: <%= ENV['DATABASE_URL'] %>
   adapter: mysql2
   encoding: utf8
   database: api_analytics
