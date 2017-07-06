@@ -2,24 +2,29 @@ development:
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  host: localhost
+  host: 127.0.0.1
+  port: 3306
   username: root
   password: root
+  socket: /var/lib/mysql/mysql.sock
 
 test:
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  host: localhost
+  host: 127.0.0.1
+  port: 3306
   username: root
   password: root
+  socket: /var/lib/mysql/mysql.sock
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
   adapter: mysql2
   encoding: utf8
   database: api_analytics
-  # host: 1bffe225-06c2-4d1e-96b2-3bae6983c139
-  host: 172.19.11.194
+  host: 127.0.0.1
+  port: 3306
   username: root
   password: root
+  socket: /var/lib/mysql/mysql.sock
